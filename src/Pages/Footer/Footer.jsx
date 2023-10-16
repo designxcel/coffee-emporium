@@ -16,7 +16,7 @@ const Footer = () => {
         const subscriber = {name, email, message}
 
         form.reset()
-        fetch('http://localhost:5000/subscriber',{
+        fetch('https://coffee-emporium-server-side-5qqbiz5j6.vercel.app/subscriber',{
             method : 'POST',
             headers : {
                 'content-type':'application/json'

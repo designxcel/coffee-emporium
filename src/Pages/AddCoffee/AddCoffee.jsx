@@ -22,7 +22,7 @@ const AddCoffee = () => {
         const newCoffee = {name, chef, supplier, taste, category, details, photo, price}
         console.log(newCoffee)
         form.reset()
-        fetch('http://localhost:5000/coffee',{
+        fetch('https://coffee-emporium-server-side-5qqbiz5j6.vercel.app/coffee',{
             method : 'POST',
             headers : {
                 'content-type':'application/json'

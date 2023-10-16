@@ -10,7 +10,7 @@ const CoffeeCollection = ({coffee, coffees, setCoffees}) => {
     const {_id, name, chef, supplier, taste, category, details, photo, price}=coffee
     
     const handleView = _id =>{
-        fetch(`http://localhost:5000/coffee/${_id}`)
+        fetch(`https://coffee-emporium-server-side-5qqbiz5j6.vercel.app/coffee/${_id}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -32,7 +32,7 @@ const CoffeeCollection = ({coffee, coffees, setCoffees}) => {
           }).then((result) => {
             if (result.isConfirmed) {
               
-            fetch(`http://localhost:5000/coffee/${_id}`, {
+            fetch(`https://coffee-emporium-server-side-5qqbiz5j6.vercel.app/coffee/${_id}`, {
                 method : 'DELETE'
             })
             .then(res => res.json())

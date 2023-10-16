@@ -52,7 +52,7 @@ const Signup = () => {
             console.log(result.user)
             const createdAt = result.user?.metadata?.creationTime;
             const user = {email, password, name, photo, createdAt}
-            fetch('http://localhost:5000/user', {
+            fetch('https://coffee-emporium-server-side-5qqbiz5j6.vercel.app/user', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
